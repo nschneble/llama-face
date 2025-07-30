@@ -1,3 +1,5 @@
+const OLLAMA_HOST = process.env.OLLAMA_HOST || 'http://localhost:11434';
+
 const cors = require('cors');
 const express = require('express');
 const { Readable } = require('stream');
@@ -41,7 +43,7 @@ app.get('/api/stream', async (req, res) => {
 	res.setHeader('X-Accel-Buffering', 'no');
 
 	try {
-		const ollamaRes = await fetch('http://localhost:11434/api/generate', {
+		const ollamaRes = await fetch(`${OLLAMA_HOST}/api/generate`, {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({

@@ -65,7 +65,7 @@ export default function App() {
     <div className="fixed inset-0 flex flex-col bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       {/* HEADER */}
       <header className="flex-none px-6 py-4 border-b border-gray-300 dark:border-gray-700">
-        <h1 className="text-3xl font-bold text-center">🧠 Ollama Chat</h1>
+        <h1 className="text-3xl font-bold text-center">🦙 Llama Face</h1>
       </header>
 
       {/* CHAT AREA */}
